@@ -1,0 +1,43 @@
+/* Student Name: Esraa Eissa Student Number: 991547632 */  
+.main{
+	display: grid; 
+	grid-template-colunms: 20% 20% 20% 20% 20%; 
+	grid-template-rows: auto; 
+	grid-template-areas: 
+	                      "personal feedback  data comment submit" ;
+	
+	grid-gap: 10px; 
+	
+}
+
+.header{
+	text-align: center; 
+	color: red; 
+}
+
+.personal{
+	grid-area: personal;  
+	background-color: #ADD8E6 ; 
+}
+.feedback{
+	grid-area: feedback; 
+	background-color: #32CD32 ; 
+}
+.data{
+	grid-area: data; 
+	background-color: 	#FF4500; 
+}
+.comment{
+	grid-area: comment;
+	background-color: 	#FFB6C1;
+	grid-c
+	
+	
+}
+textarea{
+	resize: vertical ; 
+}
+.submit{
+	grid-area: submit; 
+	background-color:	#FF0000; 
+}

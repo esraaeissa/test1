@@ -1,0 +1,81 @@
+<!doctype html> 
+<!----- Student Name: Esraa Eissa ------Student Number: 991547632 -------------> 
+<html> 
+<head> 
+  <meta charset= "UTF_8"> 
+	<meta  name="Assignment #4" content="Sheridan Website">
+	<title> Esraa Eissa </title> 
+	<link rel="StyleSheet" href=".\css\style.css" > 
+	<script> 
+	function display()
+	{
+	var a = document.details.fname.value ; 
+	var b = document.details.lname.value; 
+	var c = document.details.snumber.value ;
+	alert("Full Name: " + a + " " + b + "\nStudent Nubmer: " + c); 
+	}
+	</script>
+	
+</head> 
+<body> 
+   <header class="header"> 
+   <h1> Assignment 4 / Esraa Eissa / 991547632 </h1> 
+   </header> 
+   <form name=details>  
+     <div class="main">
+	  <div  class="personal"> 
+	  <h3> Personal Information </h3>
+	
+	  <label for="Last Name">Last Name: </label>
+	  <input type="text" name="lname" required><br>  
+	  
+      <label for="First Name"> First Name: </label> 
+	  <input type="text" name="fname" required><br> 
+	  
+      <label for="Student number"> Student number:</label>
+	  <input type="tel" name="snumber" ><br>
+	 
+      <label for="Sheridan Email"> Sheridan Email:</label>
+	  <input type="text" name="email" > <br> <br>  
+   </div> 
+   <div class="feedback">
+       <h3> Sheridan Experience</h3> 
+       <label for="Date">  Start Date:</label>
+	   <input type="date" name="date"><br>
+	   
+	   <label for="Previous years of post-secondary experience">Previous years experience: </label> 
+       <input type="number" name="year" value="0"> <br>
+        
+       <label for="campus"> Campus: </label> <br> 
+       <input type="radio" name="campus" value="Davis">Davis<br> 
+       <input type="radio" name="campus" value="Trafalgar" checked>Trafalgar <br>
+       <input type="radio" name="campus" value="HMC"> HMC <br> 	 	   
+   </div> 
+   <div class="data">
+    <h3> Financial Data </h3> 
+	   <label for="financial support amount"> Financial Support amount: </label> 
+	   <input type="number" name="amountOfMoney"> <br> 
+	   
+	   <label type="Money source"> Money Source: </label> <br> 
+	   <input type="checkbox" name="Scholarship"> Scholarship 
+	   <input type="checkbox" name="RESP"> RESP 
+	   <input type="checkbox" name="Bursary"> Bursary 
+	   <input type="checkbox" name="OSAP"> OSAP
+   </div>
+   <div class="comment"> 
+   
+    <label for="comment"> Enter your Comments here: <br> 
+	<textarea type="textarea" rows="4" cols="50" name="comment" form="usrform"> </textarea>
+	
+	</div> 
+	<div class="submit">
+	
+	<input type="button"  onclick="display()" value="Submit">  </input>
+	<button type="reset" value="reset"> Reset </button> 
+	
+	</div>
+   </div> 
+ </form>  
+   
+</body> 
+</html> 
